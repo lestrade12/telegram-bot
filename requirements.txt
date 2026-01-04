@@ -1,1 +1,2 @@
-python-telegram-bot==20.7
+python-telegram-bot==22.5
+standard-imghdr==3.13.0

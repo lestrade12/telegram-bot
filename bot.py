@@ -15,6 +15,8 @@ from telegram.ext import (
 # ================== НАСТРОЙКИ ==================
 
 TOKEN = os.getenv("BOT_TOKEN")
+if not TOKEN:
+    raise RuntimeError("BOT_TOKEN is not set")
 ADMIN_ID = 1670884870  # твой Telegram ID
 
 NAME, PHONE = range(2)
@@ -189,3 +191,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
